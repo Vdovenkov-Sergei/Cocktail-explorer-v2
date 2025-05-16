@@ -1,8 +1,8 @@
-import Header from './components/Header';
-import CocktailList from './components/CocktailList';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import CocktailList from './components/CocktailList/CocktailList';
+import Footer from './components/Footer/Footer';
 import { CocktailProvider } from './context/CocktailContext';
-import './style.css';
+import './App.css';
 
 export default function App() {
   return (

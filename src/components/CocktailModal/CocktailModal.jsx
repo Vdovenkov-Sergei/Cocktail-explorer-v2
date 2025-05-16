@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import styles from './CocktailModal.css';
 
 function getIngredients(cocktail) {
   return Array.from({ length: 15 }, (_, i) => {
@@ -16,17 +17,24 @@ export default function CocktailModal({ cocktail, onClose }) {
   }, [onClose]);
 
   return (
-    <dialog open className="cocktail-modal" onClick={(e) => e.target.tagName === 'DIALOG' && onClose()}>
-      <div className="cocktail-modal-content">
+    <dialog
+      open
+      className={styles.modal}
+      onClick={(e) => e.target.tagName === 'DIALOG' && onClose()}
+    >
+      <div className={styles.content}>
         <h2>{cocktail.strDrink}</h2>
-        <div className="cocktail-main-info">
-          <img src={`${cocktail.strDrinkThumb}/medium`} alt={cocktail.strDrink} />
-          <div className="cocktail-text-info">
+        <div className={styles.mainInfo}>
+          <img
+            src={`${cocktail.strDrinkThumb}/medium`}
+            alt={cocktail.strDrink}
+          />
+          <div className={styles.textInfo}>
             <p><strong>Category:</strong> {cocktail.strCategory}, {cocktail.strAlcoholic}</p>
             <p><strong>Glass:</strong> {cocktail.strGlass}</p>
             <p><strong>Instructions:</strong> {cocktail.strInstructions}</p>
             <p><strong>Ingredients:</strong></p>
-            <ul className="ingredient-list">{getIngredients(cocktail)}</ul>
+            <ul className={styles.ingredientList}>{getIngredients(cocktail)}</ul>
           </div>
         </div>
       </div>

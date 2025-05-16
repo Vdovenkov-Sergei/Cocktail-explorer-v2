@@ -1,0 +1,19 @@
+.idleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 18px;
+  animation: fadeIn 0.6s ease-in-out;
+  z-index: 1;
+}
+
+.idleBox img {
+  border-radius: 12px;
+  margin-top: 30px;
+  width: 65%;
+  object-fit: cover;
+}

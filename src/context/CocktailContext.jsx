@@ -12,7 +12,8 @@ export function CocktailProvider({ children }) {
 
   useEffect(() => {
     if (searchTerm) fetchCocktails(searchTerm);
-  }, []);
+  }, [searchTerm]);
+
 
   const fetchCocktails = async (term) => {
     setLoading(true);

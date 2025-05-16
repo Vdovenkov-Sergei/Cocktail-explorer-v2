@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useCocktails } from '../context/CocktailContext';
-import CocktailCard from './CocktailCard';
-import CocktailModal from './CocktailModal';
-import IdleAnimation from './IdleAnimation';
+import { useCocktails } from '../../context/CocktailContext';
+import CocktailCard from '../CocktailCard/CocktailCard';
+import CocktailModal from '../CocktailModal/CocktailModal';
+import IdleAnimation from '../IdleAnimation/IdleAnimation';
+import styles from './CocktailList.css';
 
 const API_URL = 'https://www.thecocktaildb.com/api/json/v1/1/';
 
@@ -31,12 +32,18 @@ export default function CocktailList() {
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {!loading && !error && cocktails.length === 0 && <IdleAnimation />}
-      <div className="cocktail-list">
+      <div className={styles.list}>
         {cocktails.map((cocktail) => (
-          <CocktailCard key={cocktail.idDrink} cocktail={cocktail} onClick={setSelectedId} />
+          <CocktailCard
+            key={cocktail.idDrink}
+            cocktail={cocktail}
+            onClick={setSelectedId}
+          />
         ))}
       </div>
-      {modalCocktail && <CocktailModal cocktail={modalCocktail} onClose={closeModal} />}
+      {modalCocktail && (
+        <CocktailModal cocktail={modalCocktail} onClose={closeModal} />
+      )}
     </div>
   );
 }
