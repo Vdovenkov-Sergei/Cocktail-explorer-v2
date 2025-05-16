@@ -1,4 +1,4 @@
-import styles from './CocktailCard.css';
+import styles from './CocktailCard.module.css';
 
 export default function CocktailCard({ cocktail, onClick }) {
   return (

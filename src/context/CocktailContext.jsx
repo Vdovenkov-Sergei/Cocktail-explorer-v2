@@ -29,6 +29,7 @@ export function CocktailProvider({ children }) {
         setError('No cocktails found.');
       }
     } catch (e) {
+      console.error('Error fetching cocktails:', e);
       setError('Something went wrong. Try again later.');
     }
     setLoading(false);

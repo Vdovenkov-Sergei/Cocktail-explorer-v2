@@ -1,4 +1,4 @@
-import styles from './IdleAnimation.css';
+import styles from './IdleAnimation.module.css';
 
 export default function IdleAnimation() {
   return (

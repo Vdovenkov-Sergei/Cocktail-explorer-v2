@@ -33,6 +33,12 @@
   cursor: default;
 }
 
+.content h2 {
+    margin: 0;
+    text-align: center;
+    color: var(--primary);
+}
+
 @keyframes slideUp {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
@@ -93,6 +99,10 @@
     align-items: center;
     gap: 18px;
   }
+
+  .text-info {
+      gap: 8px;
+    }
 
   .mainInfo img {
     width: 200px;

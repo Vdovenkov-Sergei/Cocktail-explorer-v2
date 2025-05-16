@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useCocktails } from '../../context/CocktailContext';
-import styles from './SearchBar.css';
+import styles from './SearchBar.module.css';
 
 export default function SearchBar() {
   const { searchTerm, setSearchTerm } = useCocktails();

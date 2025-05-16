@@ -3,7 +3,7 @@ import { useCocktails } from '../../context/CocktailContext';
 import CocktailCard from '../CocktailCard/CocktailCard';
 import CocktailModal from '../CocktailModal/CocktailModal';
 import IdleAnimation from '../IdleAnimation/IdleAnimation';
-import styles from './CocktailList.css';
+import styles from './CocktailList.module.css';
 
 const API_URL = 'https://www.thecocktaildb.com/api/json/v1/1/';
 

@@ -1,6 +1,6 @@
 import SearchBar from '../SearchBar/SearchBar';
 import { useCocktails } from '../../context/CocktailContext';
-import styles from './Header.css';
+import styles from './Header.module.css';
 
 export default function Header() {
   const { cocktails } = useCocktails();

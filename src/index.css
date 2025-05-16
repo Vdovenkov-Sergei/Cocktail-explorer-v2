@@ -9,7 +9,7 @@
     --gray: #7f8c8d;
 }
 
-html, body {
+html, body, #root {
     min-height: 100vh;
     margin: 0;
     padding: 0;

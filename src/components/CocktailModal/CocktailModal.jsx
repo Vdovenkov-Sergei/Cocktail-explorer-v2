@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
-import styles from './CocktailModal.css';
+import styles from './CocktailModal.module.css';
 
 function getIngredients(cocktail) {
   return Array.from({ length: 15 }, (_, i) => {
     const ing = cocktail[`strIngredient${i + 1}`];
     const meas = cocktail[`strMeasure${i + 1}`];
-    return ing ? <li key={i}>{ing}{meas ? `, ${meas}` : ''}</li> : null;
+    return ing ? <li key={i}><p>{ing}{meas ? `, ${meas}` : ''}</p></li> : null;
   });
 }
 
