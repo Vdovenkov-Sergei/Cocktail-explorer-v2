@@ -6,7 +6,7 @@
   text-align: center;
   color: var(--primary);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   animation: fadeIn 0.6s ease-in-out;
   z-index: 1;
 }
@@ -20,7 +20,7 @@
 
 /* Mobile devices */
 @media (max-width: 768px) {
-  .idle-box {
+  .idleBox {
       font-size: 12px;
   }
 }
