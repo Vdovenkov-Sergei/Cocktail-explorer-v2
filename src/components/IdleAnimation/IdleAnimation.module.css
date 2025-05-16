@@ -17,3 +17,10 @@
   width: 65%;
   object-fit: cover;
 }
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .idle-box {
+      font-size: 12px;
+  }
+}

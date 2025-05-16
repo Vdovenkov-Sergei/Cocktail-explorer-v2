@@ -20,6 +20,7 @@
   color: var(--accent-dark);
 }
 
+/* Mobile devices */
 @media (max-width: 768px) {
   .footer {
     padding: 8px;
@@ -27,6 +28,8 @@
   }
 }
 
+
+/* Hover effect */
 @media (hover: hover) {
   .footer a:hover {
     text-decoration: underline;

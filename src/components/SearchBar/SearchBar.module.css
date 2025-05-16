@@ -56,3 +56,36 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+
+/* Hover effects */
+@media (hover: hover) {
+    .button:hover {
+        background-color: var(--accent-dark);
+    }
+
+    .clearIcon:hover {
+        color: var(--accent-dark);
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .searchBar {
+      gap: 12px;
+      margin-top: 8px;
+  }
+
+  .input, .button {
+      font-size: 12px;
+      padding: 8px 12px;
+  }
+
+  .input {
+      padding-right: 28px;
+  }
+
+  .clearIcon {
+      right: 10px;
+      font-size: 14px;
+  }
+}
